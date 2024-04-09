@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Student Dashboard</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+        @import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #e5e5e5;
+        }
+
+        .side-bar {
+            width: 220px;
+            height: 100vh;
+            background-color: #333333;
+            overflow: hidden;
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .dashboard_img {
+            height: 70px;
+            width: 70px;
+        }
+
+        .menu {
+            width: 219px;
+            height: 45px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .menu>a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .menu:hover {
+            background-color: #6c6969;
+            cursor: pointer;
+        }
+
+        i {
+            margin: 15px;
+        }
+
+        .main {
+            position: relative;
+            display: flex;
+        }
+
+        .nav-bar {
+            height: 60px;
+            width: 100%;
+            background-color: white;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-bar>i {
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .nav-inside {
+            width: 240px;
+            height: 40px;
+            display: flex;
+            gap: 10px;
+            font-size: 13px;
+        }
+
+        .nav-inside>div:hover {
+            cursor: pointer;
+            color: #6c6969;
+        }
+        .content{
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            top: 80px;
+            left: 220px;
+        }
+
+        .content>div
+        {
+            width: 800px;
+            height: 380px;
+            margin: 15px;
+            border-top: 2px solid #3c8dbc;
+            border-radius: 8px;
+            /* box-shadow: 1px 1px 30px 1px  grey; */
+            background-color: white;
+            color: black;
+        }
+        h3
+        {
+            background-color: #3c8dbc;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        h4
+        {
+            font-size: 15px;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+        <div class="main">
+            <div class="side-bar">
+                <div>
+                    <img src="dashboard_img.png" alt="Image" class="dashboard_img">
+                    <br><br>
+                    <p>Hello, Student</p>
+                    <p>Session: 2023-2024</p>
+                    <p>Course: B.C.A. YEAR 1</p>
+                    <p><br></p>
+                    <hr size="1px" width="215px" color="grey">
+                    <div class="menu"><a href="#"><i class="fa-solid fa-gauge-high"></i>Dashboard</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-user"></i>Profile</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-book-open"></i>Attendance <i class="fa-solid fa-sort-down"></i></div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-graduation-cap"></i>ITLE / E-Learning</div></a>
+                    <div class="menu"><a href="#"><i class="fa-regular fa-user"></i>Student Section</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-building-columns"></i>Examination</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-gauge-high"></i>Student Section</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-receipt"></i>Fees Receipt</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-comments"></i>Feedback</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-graduation-cap"></i>PhD Information</div></a>
+                    <div class="menu"><a href="#"><i class="fa-regular fa-registered"></i>Even Course Subjects</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-earth-americas"></i>Online Registration</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-money-bill"></i>Payable Fees</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-print"></i>Application Reprint</div></a>
+                    <div class="menu"><a href="#"><i class="fa-solid fa-key"></i>Reset Password</div></a>
+                    <!-- <i class="fa-solid fa-book"></i> -->
+                </div>
+            </div>
+    
+            <div class="nav-bar">
+                <i class="fa-solid fa-bars" onclick="toggle()"></i>
+                <div class="nav-inside">
+                    <div>
+                        <i class="fa-solid fa-building-columns"></i>A.N. COLLEGE, PATNA
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-power-off"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="result">
+                    <h4><i class="fa-solid fa-chart-column"></i>Semester Wise Result</h4>
+                </div>
+                <div class="notice">
+                    <h3>Important Notice</h3>
+                </div>
+                <div class="attendance">
+                    <h4><i class="fa-solid fa-chart-column"></i>Semester Wise Attendance</h4>
+                </div>
+                <div class="events">
+                    <h3>Today's Events</h3>
+                </div>
+                </div>
+
+
+        </div>
+        <script>
+        function toggle() {
+            let x = document.querySelector(".side-bar");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- <input name="somename"
+    oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    type = "number"
+    maxlength = "6"
+/> -->

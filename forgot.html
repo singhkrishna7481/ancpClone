@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1" />
+    <title>Forgot Password</title>
+</head>
+<style>
+    @charset "ISO-8859-1";
+    @import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Madimi+One&family=Protest+Riot&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background-image: url(https://enrollonline.co.in/Content/LoginAssets/img/main-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        display: flex;
+        gap: 70%;
+        background-color: #1e3e59;
+        width: 100%;
+        height: 83px;
+    }
+
+    .header img {
+        padding-left: 4%;
+        margin: 8px;
+    }
+
+    .header div h1 {
+        padding-top: 3.5%;
+        font-size: 25px;
+    }
+
+    .header div h2 {
+        padding-top: 3%;
+        font-size: 15px;
+    }
+
+    .main {
+        position: absolute;
+        top: 30%;
+        left: 35%;
+    }
+
+    input {
+        font-size: 15px;
+        border: none;
+        outline: none;
+        height: 10px;
+        width: 450px;
+        border-radius: 5px;
+        color: black;
+        padding: 15px;
+    }
+
+    .main>h1 {
+        margin: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    #login-btn {
+        margin-top: 20px;
+        width: 220px;
+        height: 30px;
+        background-color: #6ed4ff;
+        border-radius: 5px;
+        border: none;
+    }
+
+    #search-btn {
+        margin-top: 20px;
+        width: 220px;
+        height: 30px;
+        background-color: #1e3e59;
+        border-radius: 5px;
+        border: none;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="logo.png" alt="" />
+            <div>
+                <h1>A.N. COLLEGE, PATNA</h1>
+                <h2>Boring Road, Srikrishnapuri Patna, Bihar, India</h2>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <h1>Forgot Password</h1>
+        <form action="forgot" method="post" name="myForm" id="myForm">
+            <p>
+                <input type="text" name="username" id="username" placeholder="Username*" maxlength="30" required />
+                <br />
+            </p>
+            <br />
+            <p>
+                <input type="number" name="mobileNumber" id="mobileNumber" placeholder="Mobile Number*" maxlength="10"
+                    required /><br />
+            </p>
+            <br />
+            <button id="login-btn" onclick="window.location.href='index.html';" type="button">
+                GO TO HOMEPAGE
+            </button>
+            <button name="search" id="search-btn" type="submit" value="submit">
+                SEARCH
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
